@@ -14,6 +14,12 @@ class unix_base::common inherits unix_base {
 
   }
 
+  package { 'deep_merge':
+    provider => gem,
+    ensure   => installed,
+  }
+
+
 #################################################
 # Set any packages by OS
   if $::operatingsystem == "CentOS" {
