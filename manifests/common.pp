@@ -31,7 +31,7 @@ class unix_base::common inherits unix_base {
   if $::operatingsystem == "Ubuntu" {
     $vim_pkg = 'vim'
     $git_pkg = 'git-core'
-    $extra_packages = ['build-essential', 'libssl-dev', 'pkg-config']
+    $extra_packages = ['libssl-dev', 'pkg-config']
   }
 #################################################
 
